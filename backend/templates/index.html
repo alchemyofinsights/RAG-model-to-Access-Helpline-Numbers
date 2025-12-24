@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Safe Haven</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <div class="page">
+
+    <div class="card">
+
+      <header class="card-header">
+        <h1>Safe Haven</h1>
+        <p>
+          A calm place to pause, breathe, and find trusted support.
+        </p>
+      </header>
+
+      <section class="form-section">
+        <input id="age" type="number" placeholder="Your age" />
+        <input id="state" placeholder="Your state / region" />
+        <textarea id="scenario" rows="4"
+          placeholder="Describe what you are going through…"></textarea>
+
+        <button onclick="submitForm()">Find Support</button>
+      </section>
+
+      <section class="result-section">
+
+        <div id="helplines-container" class="helplines">
+          <!-- Injected dynamically -->
+        </div>
+
+        <div class="advice-panel">
+          <h2>Guidance</h2>
+          <p id="advice-text">
+            Your guidance will appear here.
+          </p>
+        </div>
+
+      </section>
+
+    </div>
+
+    <footer>
+      If you are in immediate danger, contact local emergency services.
+    </footer>
+
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
