@@ -20,23 +20,21 @@ This Project aims in using **Retrieval-Augmented Generation (RAG)** to efficient
 
 ## Directory & File Structure : 
 
+<pre>
 helpline_rag/
-│
 ├── backend/
 │   ├── app.py                 # Flask API entry point
 │   ├── rag_graph.py           # RAG orchestration logic
 │   ├── vector_store.py        # Vector store (PKL) handling
 │   ├── hf_llm.py              # LLM wrapper
 │   ├── helplines.xlsx         # Source helpline dataset
-│   │
 │   ├── templates/
 │   │   └── index.html         # HTML template (Flask-rendered)
-│   │
 │   └── static/
 │       ├── style.css          # CSS styling
 │       └── script.js          # Frontend logic
-│
 └── README.md
+</pre>
 
 
 ---
