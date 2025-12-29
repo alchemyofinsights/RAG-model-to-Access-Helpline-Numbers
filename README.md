@@ -38,6 +38,54 @@ helpline_rag/
 
 
 ---
+## Steps to install : 
+
+Clone the repository and move into the project directory.
+
+<pre>
+git clone https://github.com/alchemyofinsights/RAG-model-to-Access-Helpline-Numbers.git
+cd helpline-rag
+</pre>
 
 
+Create a virtual environment.
+
+<pre>
+python -m venv venv
+</pre>
+
+
+Activate the virtual environment.
+
+<pre>
+# Windows
+venv\Scripts\activate
+
+# Linux / macOS
+source venv/bin/activate
+</pre>
+
+
+Install the required dependencies.
+
+<pre>
+pip install -r requirements.txt
+</pre>
+
+
+Run the Flask application.
+
+<pre>
+cd backend
+python app.py
+</pre>
+
+
+Open the application in your browser.
+
+<pre>
+http://127.0.0.1:5000
+</pre>
+
+---
 
